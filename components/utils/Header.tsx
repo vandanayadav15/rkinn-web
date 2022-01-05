@@ -43,8 +43,8 @@ const Header = () => {
                 <MuiNextLink activeClassName="active" href="/">
                   <Image
                     height="56"
-                    width="120"
-                    src="/icons/logo.svg"
+                    width="70"
+                    src="/new_logo.jpeg"
                     alt="logo"
                   />
                 </MuiNextLink>
