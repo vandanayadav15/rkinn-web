@@ -35,25 +35,6 @@ const Banner = () => {
 
   ];
   return (
-<<<<<<< HEAD
-    <Container sx={{ display: "flex", alignItems: "center", height: "700px" }} >
-      <Typography
-        variant="h1"
-        color="primary"
-      >
-        Page Under Contruction
-      </Typography>
-      <Typography
-        variant="h6"
-        component="div"
-        gutterBottom
-        align="center"
-        data-aos="zoom-in-up"
-        sx={{ padding: "20"}}
-      >
-      Indane has now become one of the largest packed-LPG brands in the world with IndianOil as the second 
-        </Typography>
-=======
   <Container >
     <Swiper
       spaceBetween={50}
@@ -76,7 +57,6 @@ const Banner = () => {
         </SwiperSlide>
       ))}
     </Swiper>
->>>>>>> 9191ef22684ca18afce4779819dc614fc0a8a76d
   </Container>
   );
 }
