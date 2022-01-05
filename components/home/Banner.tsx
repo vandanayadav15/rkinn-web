@@ -1,4 +1,4 @@
-import { Container, Hidden, Typography } from "@mui/material";
+import { Container, Hidden, Typography,} from "@mui/material";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {
@@ -14,17 +14,6 @@ import Image from "next/image";
 // import "/node-modules/swiper/swiper-bundle.min.css";
 SwiperCore.use([Virtual, Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
-
-const styles:any = {
-  paperContainer: {
-    backgroundImage: `url(${"../../../hotel_banner.jpeg"})`,
-    height: "600px",
-    backgroundRepeat: "no-repeat",
-    backgroundSize: "100% 100%",
-    marginTop: "60px",
-  },
-};
-
 const Banner = () => {
     const slides = [
       { xl: "/img/banner/1-xl.jpeg", xs: "/img/banner/1-xs.jpeg", alt: "banner-1" },
@@ -34,8 +23,22 @@ const Banner = () => {
       { xl: "/img/banner/5-xl.jpeg", xs: "/img/banner/5-xs.jpeg", alt: "banner-5" }
 
   ];
+  const styles:any = {
+  container: {
+    position: "relative",
+  textAlign: "center",
+  color: "white"
+    },
+    centered: {
+      position: "absolute",
+  top: "50%",
+  left: "50%",
+      transform: 'translate(-50%, -50%)',
+  fontSize:"32px"
+    }
+};
   return (
-  <Container >
+    <Container> 
     <Swiper
       spaceBetween={50}
       slidesPerView={1}
@@ -46,17 +49,21 @@ const Banner = () => {
     >
       {slides.map((item, index) => (
         <SwiperSlide key={index} virtualIndex={index}>
-
-         <Hidden smUp>
-            <Image src={item.xs} alt={item.alt} height="450" width="350" layout="responsive"/>
+          <Hidden smUp>
+            <div style={styles.container}>
+            <Image src={item.xs} alt={item.alt} height="450" width="350" layout="responsive" />
+              <p style={styles.centered}>Some text here</p>
+              </div>
           </Hidden>
-         <Hidden smDown>
+          <Hidden smDown>
+            <div style={styles.container}>
             <Image src={item.xl} alt={item.alt} height="450" width="1080" layout="responsive" />
+              <p style={styles.centered}>Some text here</p>
+              </div>
           </Hidden> 
-           
         </SwiperSlide>
       ))}
-    </Swiper>
+      </Swiper>
   </Container>
   );
 }
