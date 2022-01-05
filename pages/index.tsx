@@ -7,9 +7,9 @@ import Footer from "../components/utils/Footer";
 import Banner from "../components/home/Banner";
 const Home: NextPage = (props: any) => {
   return (
-    <Container >
-      <Banner></Banner>
-      <PUC />
+    <Container sx={{ marginTop: 2}}>
+      <Banner />
+      <br/>
       <Footer />
     </Container>
   );
