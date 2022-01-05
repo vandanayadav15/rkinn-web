@@ -2,7 +2,7 @@ import { Grid, Paper, Typography } from "@mui/material";
 
 const styles:any = {
   paperContainer: {
-    backgroundImage: `url(${"../../../icons/gas.jpeg"})`,
+    backgroundImage: `url(${"../../../new_banner.jpeg"})`,
     height: "600px",
     backgroundRepeat: "no-repeat",
     backgroundSize: "100% 100%",
