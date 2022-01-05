@@ -66,10 +66,10 @@ const Banner = () => {
       {slides.map((item, index) => (
         <SwiperSlide key={index} virtualIndex={index}>
 
-         <Hidden mdUp>
+         <Hidden smUp>
             <Image src={item.xs} alt={item.alt} height="450" width="350" layout="responsive"/>
           </Hidden>
-         <Hidden mdDown>
+         <Hidden smDown>
             <Image src={item.xl} alt={item.alt} height="450" width="1080" layout="responsive" />
           </Hidden> 
            
