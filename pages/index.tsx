@@ -2,16 +2,12 @@ import type { GetStaticProps, NextPage } from "next";
 import * as React from "react";
 import Container from "@mui/material/Container";
 import item from "./api/index.json";
-import Banner from "../components/utils/Banner";
-import Service from "../components/utils/Service";
-import About from "../components/utils/About";
+import PUC from "../components/utils/PUC";
 import Footer from "../components/utils/Footer";
 const Home: NextPage = (props: any) => {
   return (
     <Container >
-      <Banner />
-      <Service />
-      <About />
+      <PUC />
       <Footer />
     </Container>
   );

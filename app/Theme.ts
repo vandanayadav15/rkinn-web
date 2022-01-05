@@ -4,7 +4,7 @@ import { blueGrey, red, orange, deepOrange } from "@mui/material/colors";
 // Create a theme instance.
 let Theme = createTheme({
   palette: {
-    primary: deepOrange,
+    primary: red,
     secondary: blueGrey,
     warning: orange,
     error: red,

@@ -50,20 +50,7 @@ const Header = () => {
                 </MuiNextLink>
               </IconButton>
 
-              <IconButton
-                edge="start"
-                aria-label="home"
-                sx={{ display: { xs: "none", sm: "block" } }}
-              >
-                <MuiNextLink href="/">
-                  <Image
-                    height="56"
-                    width="120"
-                    src="/icons/indane.png"
-                    alt="logo"
-                  />
-                </MuiNextLink>
-              </IconButton>
+
 
               <Stack
                 direction="column"
@@ -86,7 +73,7 @@ const Header = () => {
                   }}
                 >
                   <PhoneIcon fontSize="small" color="secondary" /> &nbsp;{" "}
-                  {"08518-228699 / 7901511111"}
+                  {"08518-294455"}
                 </Typography>
                 <Typography
                   variant="caption"
@@ -100,7 +87,7 @@ const Header = () => {
                   }}
                 >
                   <MailOutlineIcon fontSize="small" color="secondary" /> &nbsp;{" "}
-                  {"rkinn@gmail.com"}
+                  {"hotelrkinndeluxelodge@gmail.com"}
                 </Typography>
               </Stack>
             </Toolbar>
