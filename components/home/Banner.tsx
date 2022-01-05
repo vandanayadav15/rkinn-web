@@ -52,13 +52,31 @@ const Banner = () => {
           <Hidden smUp>
             <div style={styles.container}>
             <Image src={item.xs} alt={item.alt} height="450" width="350" layout="responsive" />
-              <p style={styles.centered}>Some text here</p>
+              {/* <p style={styles.centered}>Some text here</p> */}
+              <Typography  style={styles.centered}
+        variant="h2"
+        component="div"
+        gutterBottom
+        align="center"
+        data-aos="fade-up"
+      >
+        WE BUILD TRUST
+      </Typography>
               </div>
           </Hidden>
           <Hidden smDown>
             <div style={styles.container}>
             <Image src={item.xl} alt={item.alt} height="450" width="1080" layout="responsive" />
-              <p style={styles.centered}>Some text here</p>
+              {/* <p style={styles.centered}>Some text here</p> */}
+                <Typography  style={styles.centered}
+        variant="h2"
+        component="div"
+        gutterBottom
+        align="center"
+        data-aos="fade-up"
+      >
+        WE BUILD TRUST
+      </Typography>
               </div>
           </Hidden> 
         </SwiperSlide>
