@@ -44,7 +44,7 @@ const Header = () => {
                   <Image
                     height="56"
                     width="70"
-                    src="/new_logo.jpeg"
+                    src="/logo.png"
                     alt="logo"
                   />
                 </MuiNextLink>

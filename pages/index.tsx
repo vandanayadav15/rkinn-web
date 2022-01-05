@@ -4,10 +4,12 @@ import Container from "@mui/material/Container";
 import item from "./api/index.json";
 import PUC from "../components/utils/PUC";
 import Footer from "../components/utils/Footer";
+import Banner from "../components/home/Banner";
 const Home: NextPage = (props: any) => {
   return (
-    <Container >
-      <PUC />
+    <Container sx={{ marginTop: 2}}>
+      <Banner />
+      <br/>
       <Footer />
     </Container>
   );
