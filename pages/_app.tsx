@@ -9,7 +9,6 @@ import CreateEmotionCache from "../app/CreateEmotionCache";
 import Header from "../components/utils/Header";
 import "aos/dist/aos.css";
 import AOS from "aos";
-
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = CreateEmotionCache();
 
