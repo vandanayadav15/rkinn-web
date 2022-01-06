@@ -14,34 +14,7 @@ import Image from "next/image";
 // import "/node-modules/swiper/swiper-bundle.min.css";
 SwiperCore.use([Virtual, Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
-const Banner = () => {
-  const slides = [
-    {
-      xl: "/img/banner/1-xl.jpeg",
-      xs: "/img/banner/1-xs.jpeg",
-      alt: "banner-1",
-    },
-    {
-      xl: "/img/banner/2-xl.jpeg",
-      xs: "/img/banner/2-xs.jpeg",
-      alt: "banner-2",
-    },
-    {
-      xl: "/img/banner/3-xl.jpeg",
-      xs: "/img/banner/3-xs.jpeg",
-      alt: "banner-3",
-    },
-    {
-      xl: "/img/banner/4-xl.jpeg",
-      xs: "/img/banner/4-xs.jpeg",
-      alt: "banner-4",
-    },
-    {
-      xl: "/img/banner/5-xl.jpeg",
-      xs: "/img/banner/5-xs.jpeg",
-      alt: "banner-5",
-    },
-  ];
+const Banner = ({ data }: any) => {
   const styles: any = {
     container: {
       position: "relative",
@@ -57,6 +30,28 @@ const Banner = () => {
       fontSize: "32px",
     },
   };
+  const BannerText = ({ item }: any) => (
+    <>
+      <Typography
+        variant="h3"
+        component="div"
+        gutterBottom
+        align="center"
+        data-aos="fade-up"
+      >
+        {item.title}
+      </Typography>
+      <Typography
+        variant="body2"
+        component="div"
+        gutterBottom
+        align="center"
+        data-aos="fade-up"
+      >
+        {item.summary}
+      </Typography>
+    </>
+  );
   return (
     <Container>
       <Swiper
@@ -67,7 +62,7 @@ const Banner = () => {
         autoplay
         pagination={{ clickable: true }}
       >
-        {slides.map((item, index) => (
+        {data.map((item, index) => (
           <SwiperSlide key={index} virtualIndex={index}>
             <div style={styles.container}>
               <Hidden smUp>
@@ -78,17 +73,7 @@ const Banner = () => {
                   width="350"
                   layout="responsive"
                 />
-                {/* <p style={styles.centered}>Some text here</p> */}
-                <Typography
-                  style={styles.centered}
-                  variant="h2"
-                  component="div"
-                  gutterBottom
-                  align="center"
-                  data-aos="fade-up"
-                >
-                  WE BUILD TRUST
-                </Typography>
+                <BannerText item={item} />
               </Hidden>
               <Hidden smDown>
                 <Image
@@ -98,17 +83,7 @@ const Banner = () => {
                   width="1080"
                   layout="responsive"
                 />
-                {/* <p style={styles.centered}>Some text here</p> */}
-                <Typography
-                  style={styles.centered}
-                  variant="h2"
-                  component="div"
-                  gutterBottom
-                  align="center"
-                  data-aos="fade-up"
-                >
-                  WE BUILD TRUST
-                </Typography>
+                <BannerText item={item} />
               </Hidden>
             </div>
           </SwiperSlide>
