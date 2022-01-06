@@ -36,7 +36,7 @@ pipeline {
                 branch 'main'
             }
             steps {
-                sh 'docker rmi rkinn/rkinn-web-${BRANCH_NAME}:${BUILD_NUMBER} rkinn/rkinn-web-${BRANCH_NAME}:latest'
+                sh 'docker rmi rkinn/rkinn-web-${BRANCH_NAME}'
             }
         }
         stage('kube-deploy') {

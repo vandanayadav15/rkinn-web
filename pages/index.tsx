@@ -7,11 +7,13 @@ import Footer from "../components/utils/Footer";
 import Banner from "../components/home/Banner";
 const Home: NextPage = (props: any) => {
   return (
-    <Container sx={{ marginTop: 2}}>
-      <Banner />
-      <br/>
+    <>
+      <Container sx={{ marginTop: 2 }}>
+        <Banner />
+        <br />
+      </Container>
       <Footer />
-    </Container>
+    </>
   );
 };
 
