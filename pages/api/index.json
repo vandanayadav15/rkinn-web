@@ -1,1 +1,40 @@
-{ "name": "RK Inn" }
+{
+  "name": "RK Inn",
+  "slides": [
+    {
+      "xl": "/img/banner/1-xl.jpeg",
+      "xs": "/img/banner/1-xs.jpeg",
+      "alt": "banner-1",
+      "title": "1",
+      "summary": "Banner 1"
+    },
+    {
+      "xl": "/img/banner/2-xl.jpeg",
+      "xs": "/img/banner/2-xs.jpeg",
+      "alt": "banner-2",
+      "title": "2",
+      "summary": "Banner 2"
+    },
+    {
+      "xl": "/img/banner/3-xl.jpeg",
+      "xs": "/img/banner/3-xs.jpeg",
+      "alt": "banner-3",
+      "title": "3",
+      "summary": "Banner 3"
+    },
+    {
+      "xl": "/img/banner/4-xl.jpeg",
+      "xs": "/img/banner/4-xs.jpeg",
+      "alt": "banner-4",
+      "title": "4",
+      "summary": "Banner 4"
+    },
+    {
+      "xl": "/img/banner/5-xl.jpeg",
+      "xs": "/img/banner/5-xs.jpeg",
+      "alt": "banner-5",
+      "title": "5",
+      "summary": "Banner5"
+    }
+  ]
+}
