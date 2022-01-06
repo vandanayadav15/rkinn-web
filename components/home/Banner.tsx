@@ -54,7 +54,7 @@ const Banner = () => {
             <Image src={item.xs} alt={item.alt} height="450" width="350" layout="responsive" />
               {/* <p style={styles.centered}>Some text here</p> */}
               <Typography  style={styles.centered}
-        variant="h2"
+        variant="h1"
         component="div"
         gutterBottom
         align="center"
@@ -69,7 +69,7 @@ const Banner = () => {
             <Image src={item.xl} alt={item.alt} height="450" width="1080" layout="responsive" />
               {/* <p style={styles.centered}>Some text here</p> */}
                 <Typography  style={styles.centered}
-        variant="h2"
+        variant="h1"
         component="div"
         gutterBottom
         align="center"
