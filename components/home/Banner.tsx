@@ -58,29 +58,6 @@ const Banner = () => {
     },
   };
   return (
-<<<<<<< HEAD
-    <Container> 
-    <Swiper
-      spaceBetween={50}
-      slidesPerView={1}
-      virtual
-      navigation
-      autoplay
-      pagination={{ clickable: true }}
-    >
-      {slides.map((item, index) => (
-        <SwiperSlide key={index} virtualIndex={index}>
-          <Hidden smUp>
-            <div style={styles.container}>
-            <Image src={item.xs} alt={item.alt} height="450" width="350" layout="responsive" />
-              {/* <p style={styles.centered}>Some text here</p> */}
-              <Typography  style={styles.centered}
-        variant="h1"
-        component="div"
-        gutterBottom
-        align="center"
-        data-aos="fade-up"
-=======
     <Container>
       <Swiper
         spaceBetween={50}
@@ -89,28 +66,10 @@ const Banner = () => {
         navigation
         autoplay
         pagination={{ clickable: true }}
->>>>>>> 46e94bf27c8549b47e7538b4fb19a4911f2c5210
       >
         {slides.map((item, index) => (
           <SwiperSlide key={index} virtualIndex={index}>
             <div style={styles.container}>
-<<<<<<< HEAD
-            <Image src={item.xl} alt={item.alt} height="450" width="1080" layout="responsive" />
-              {/* <p style={styles.centered}>Some text here</p> */}
-                <Typography  style={styles.centered}
-        variant="h1"
-        component="div"
-        gutterBottom
-        align="center"
-        data-aos="fade-up"
-      >
-        WE BUILD TRUST
-      </Typography>
-              </div>
-          </Hidden> 
-        </SwiperSlide>
-      ))}
-=======
               <Hidden smUp>
                 <Image
                   src={item.xs}
@@ -154,7 +113,6 @@ const Banner = () => {
             </div>
           </SwiperSlide>
         ))}
->>>>>>> 46e94bf27c8549b47e7538b4fb19a4911f2c5210
       </Swiper>
     </Container>
   );
