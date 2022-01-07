@@ -2,21 +2,22 @@
 import { Container, ImageListItem,Grid, Typography, Paper, Box, CssBaseline } from '@mui/material'
 import React from 'react'
 import Image from "next/image"
+import { makeStyles } from '@mui/styles';
 
-const styles: any = {
+const useStyles = makeStyles({
         serviceContainer: {
             width: "100%",
             display: "flex",
             flexDirection: "column",
             margin: "24px auto"
-        },
-        serviceHeading: {
+    },
+    serviceHeading: {
             textAlign:"center"
-        },
-        Content: {
+    },
+    Content: {
             display: "flex",
             padding: "24px"
-        },
+    },
     serviceContent: {
         width: "50%"
     },
@@ -26,49 +27,52 @@ const styles: any = {
             textAlign: "justify",
             color: "rgb(99, 102, 111)"
             
-        },
-        serviceImageContainer: {
+    },
+     serviceImageContainer: {
             width: "50%",
             display: "flex",
     justifyContent:"flex-end"
-        },
-        serviceImage: { 
+    },
+       serviceImage: { 
             width: "400px",
             height: "300px",
             margin: "0 auto"
             
-        },
-        img :{
+    },
+         img :{
                 width: "100%",
                 height: "100%"
         }
-    }; 
+});
 
 export const Service = (props: any) => {
-    
+    console.log(props)
+     const classes = useStyles();
     return (
         <>
-            <div style={styles.serviceContainer}>
-                <div style={styles.serviceHeading}>
+            <div className={classes.serviceContainer}>
+                <div className={classes.serviceHeading}>
                     <Typography variant="h2" gutterBottom component="div">
-                        <b>Service</b>
+                        <b>{props.data.name}</b>
                     </Typography>
                 </div>
-                <div style={styles.Content}>
-                    <div style={styles.serviceContent}>
+                <div className={classes.Content}>
+                    <div className={classes.serviceContent}>
                         <Typography
                             variant="body1"
                             component="p"
                             gutterBottom 
-                            style={styles.serviceText}
-                        >
-                            
-                        The best service apartments in Hyderabad for your short and extended stays.You travel with a purpose and we assure an effortlessly comfortable, convenient and absolutely homelike stay every time you visit the City of Nizams.Embrace congenial pleasures and a home like environment with Blobb, Premium Serviced Apartments. The apartment offers an outdoor pool. A car rental service is available at Blobb Serviced Apartment.
+                            className={classes.serviceText}
+                            data-aos="fade-right"
+                        >   
+                        {props.data.content}
                     </Typography>
                     </div>
-                    <div style={styles.serviceImageContainer}>
-                        <div style={styles.serviceImage}> 
-                            <img src="/hotel_banner.jpeg" style={styles.img} /> 
+                    <div className={classes.serviceImageContainer}>
+                        <div className={classes.serviceImage}> 
+                            <img src={props.data.image} className={classes.img}
+                                data-aos="fade-left" /> 
+                            
                         </div>
                     </div>
                 </div>
