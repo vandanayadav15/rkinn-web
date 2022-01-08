@@ -38,11 +38,7 @@ const useStyles = makeStyles({
             height: "300px",
             margin: "0 auto"
             
-    },
-         img :{
-                width: "100%",
-                height: "100%"
-        }
+    }
 });
 
 export const Service = (props: any) => {
@@ -70,14 +66,15 @@ export const Service = (props: any) => {
                     </div>
                     <div className={classes.serviceImageContainer}>
                         <div className={classes.serviceImage}> 
-                            <img src={props.data.image} className={classes.img}
-                                data-aos="fade-left" /> 
-                            
+                            <Image src={props.data.image}
+                                alt='' height="100%"
+                                width="100%"
+                                layout="responsive"
+                                data-aos="fade-left" />     
                         </div>
                     </div>
                 </div>
             </div>
-
         </> 
   );
 };
