@@ -51,14 +51,16 @@ const Branch = (props: any) => {
                   }}
                 >
                   <Box key={hotels.id}>
-                    <Image
-                      src={hotels.image}
-                      alt=""
-                      width="400px"
-                      height="300px"
-                      data-aos="fade-up"
-                      data-aos-anchor-placement="top-bottom"
-                    />
+                    <div style={{ borderRadius: "16px", overflow: "hidden" }}>
+                      <Image
+                        src={hotels.image}
+                        alt=""
+                        width="400px"
+                        height="300px"
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom"
+                      />
+                    </div>
                     {hotels.text}
                     <Typography
                       variant="body1"
