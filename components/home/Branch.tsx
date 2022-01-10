@@ -10,7 +10,6 @@ const Branch = (props: any) => {
         gutterBottom
         component="div"
         sx={{ textAlign: "center" }}
-        color={"primary"}
       >
         {props.data.name}
       </Typography>
@@ -51,7 +50,12 @@ const Branch = (props: any) => {
                   }}
                 >
                   <Box key={hotels.id}>
-                    <div style={{ borderRadius: "16px", overflow: "hidden" }}>
+                    <div
+                      style={{
+                        borderRadius: "16px",
+                        overflow: "hidden",
+                      }}
+                    >
                       <Image
                         src={hotels.image}
                         alt=""

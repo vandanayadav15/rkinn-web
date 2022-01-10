@@ -19,7 +19,7 @@ const Banner = ({ data }: any) => {
     container: {
       position: "relative",
       textAlign: "center",
-      color: "black",
+      color: "white",
       backgroundColor: "rgba(0,0,0,0.5)",
     },
     centered: {
@@ -62,7 +62,7 @@ const Banner = ({ data }: any) => {
         autoplay
         pagination={{ clickable: true }}
       >
-        {data.map((item:any, index:any) => (
+        {data.map((item: any, index: any) => (
           <SwiperSlide key={index} virtualIndex={index}>
             <div style={styles.container}>
               <Hidden smUp>

@@ -16,7 +16,7 @@ const Home: NextPage = ({ data }: any) => {
         <Banner data={data.slides} />
         <Service data={data.service} />
         <BannerIntro data={data.bannerIntro} />
-        <About />
+        <About data={data.about} />
         <Branch data={data.branch_master} />
       </Container>
       <Footer />

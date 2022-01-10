@@ -3,7 +3,7 @@ import { makeStyles } from "@mui/styles";
 import Image from "next/image";
 import React from "react";
 
-const holtes = [
+const aboutHotel = [
   {
     id: 1,
     image: "/img/banner/1-xl.jpeg",
@@ -42,7 +42,7 @@ const About = (props: any) => {
 
       <br />
       <Grid container spacing={6}>
-        {holtes.map((holtes, index) => {
+        {aboutHotel.map((aboutHotel, index) => {
           return (
             <Grid
               key={index}
@@ -54,7 +54,7 @@ const About = (props: any) => {
               sx={{ textAlign: "center", padding: "8px" }}
             >
               <Box
-                key={holtes.id}
+                key={aboutHotel.id}
                 style={{ borderRadius: "16px", overflow: "hidden" }}
               >
                 <div
@@ -65,7 +65,7 @@ const About = (props: any) => {
                   }}
                 >
                   <Image
-                    src={holtes.image}
+                    src={aboutHotel.image}
                     alt=""
                     width="400px"
                     height="300px"
