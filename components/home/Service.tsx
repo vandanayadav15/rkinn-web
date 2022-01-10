@@ -46,6 +46,61 @@ export const Service = (props: any) => {
      const classes = useStyles();
     return (
         <>
+            
+         {/* <br />
+      <Typography
+        variant="h3"
+        gutterBottom
+        component="div"
+        sx={{ textAlign: "center" }}
+        color={'primary'}
+      >
+       {data.name}
+      </Typography>
+      <br />
+      <Grid container spacing={4}>
+        {data.map((item:any,index:any) => {
+          return (
+            <Grid
+              key={index}
+              item
+              lg={4}
+              md={6}
+              sm={12}
+              xs={12}
+              sx={{ margin: "auto", textAlign: "center" }}
+              data-aos="fade-up"
+              data-aos-delay={150*index}
+            >
+              <ImageListItem key={item.id}>
+                <Image src={item.image} alt="" width="48" height="48"/>
+              </ImageListItem>
+              <Typography
+                variant="h6"
+                gutterBottom
+                color={'primary'}
+              >
+                {item.image}
+              </Typography>
+              <Typography
+                variant="subtitle2"
+                sx={{ textAlign: "left" }}
+                gutterBottom
+                component="div"
+                style={{
+                  padding: "0px 30px",
+                  letterSpacing: "1px",
+                  textAlign: "justify",
+                }}
+              >
+                {item.content}
+              </Typography>
+            </Grid>
+          );
+        })}
+      </Grid> */}
+
+
             <div className={classes.serviceContainer}>
                 <div className={classes.serviceHeading}>
                     <Typography variant="h2" gutterBottom component="div">

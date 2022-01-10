@@ -37,14 +37,58 @@
       "summary": "Banner5"
     }
   ],
-  "service":{
-    "name":"About RK INN Services",
-    "content":"The best service apartments in Kurnool for your short and extended stays.You travel with a purpose and we assure an effortlessly comfortable, convenient and absolutely homelike stay every time you visit the City of Nizams.Embrace congenial pleasures and a home like environment with Rk Inn, Premium Serviced Apartments. The apartment offers an outdoor pool. A car rental service is available at Rk Inn Serviced Apartment.",
-    "image":"/img/banner/konda.png"
+  "service": {
+    "name": "About RK INN Services",
+    "content": "The best service apartments in Kurnool for your short and extended stays.You travel with a purpose and we assure an effortlessly comfortable, convenient and absolutely homelike stay every time you visit the City of Nizams.Embrace congenial pleasures and a home like environment with Rk Inn, Premium Serviced Apartments. The apartment offers an outdoor pool. A car rental service is available at Rk Inn Serviced Apartment.",
+    "image": "/img/banner/konda.png"
   },
-  "bannerIntro":{
-    "title":"Look for the bestAccommodation and experiences!",
+  "bannerIntro": {
+    "title": "Look for the bestAccommodation and experiences!",
     "image": "/img/banner/9-xl.jpeg"
+  },
+  "branch_master": {
+    "name": "Feel At Home In",
+    "branch": [
+      {
+        "place": "Kurnool",
+        "hotels": [
+          {
+            "id": 1,
+            "image": "/img/banner/1-xl.jpeg",
+            "text": "RK INN Master Executive Suite"
+          },
+          {
+            "id": 2,
+            "image": "/img/banner/2-xl.jpeg",
+            "text": "RK INN Master Executive Suite"
+          },
+          {
+            "id": 3,
+            "image": "/img/banner/3-xl.jpeg",
+            "text": "RK INN Master Executive Suite"
+          }
+        ]
+      },
+      {
+        "place": "Gachibowli",
+        "hotels": [
+          {
+            "id": 1,
+            "image": "/img/banner/1-xl.jpeg",
+            "text": "RK INN Master Executive Suite"
+          },
+          {
+            "id": 2,
+            "image": "/img/banner/2-xl.jpeg",
+            "text": "RK INN Master Executive Suite"
+          },
+          {
+            "id": 3,
+            "image": "/img/banner/3-xl.jpeg",
+            "text": "RK INN Master Executive Suite"
+          }
+        ]
+      }
+    ]
   }
-
 }

@@ -7,6 +7,7 @@ import Service from "../components/home/Service";
 import Container from "@mui/material/Container";
 import { BannerIntro } from "../components/home/BannerIntro";
 import About from "../components/home/About";
+import Branch from "../components/home/Branch";
 
 const Home: NextPage = ({ data }: any) => {
   return (
@@ -15,7 +16,8 @@ const Home: NextPage = ({ data }: any) => {
         <Banner data={data.slides} />
         <Service data={data.service} />
         <BannerIntro data={data.bannerIntro} />
-        <About/>
+        <About />
+        <Branch data={data.branch_master} />
       </Container>
       <Footer />
     </>
