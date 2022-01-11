@@ -41,7 +41,7 @@ const About = (props: any) => {
       </Typography>
 
       <br />
-      <Grid container spacing={6}>
+      <Grid container spacing={8}>
         {aboutHotel.map((aboutHotel, index) => {
           return (
             <Grid
@@ -57,8 +57,8 @@ const About = (props: any) => {
                 key={aboutHotel.id}
                 style={{ borderRadius: "16px", overflow: "hidden" }}
               >
-                <div
-                  style={{
+                <Box
+                  sx={{
                     position: "relative",
                     borderRadius: "16px",
                     overflow: "hidden",
@@ -68,11 +68,11 @@ const About = (props: any) => {
                     src={aboutHotel.image}
                     alt=""
                     width="400px"
-                    height="300px"
+                    height="400px"
                     data-aos="fade-up"
                     data-aos-anchor-placement="top-bottom"
                   />
-                </div>
+                </Box>
               </Box>
             </Grid>
           );

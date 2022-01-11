@@ -19,6 +19,7 @@ const Branch = (props: any) => {
             variant="h6"
             gutterBottom
             component="div"
+            padding="12px"
             sx={{ textAlign: "left" }}
           >
             Explore IN{" "}
@@ -50,8 +51,8 @@ const Branch = (props: any) => {
                   }}
                 >
                   <Box key={hotels.id}>
-                    <div
-                      style={{
+                    <Box
+                      sx={{
                         borderRadius: "16px",
                         overflow: "hidden",
                       }}
@@ -59,23 +60,23 @@ const Branch = (props: any) => {
                       <Image
                         src={hotels.image}
                         alt=""
-                        width="400px"
-                        height="300px"
+                        width="450px"
+                        height="250px"
                         data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom"
                       />
-                    </div>
+                    </Box>
                     {hotels.text}
                     <Typography
                       variant="body1"
-                      sx={{ textAlign: "left" }}
-                      gutterBottom
-                      component="div"
-                      style={{
+                      sx={{
+                        textAlign: "left",
                         padding: "0px 0px",
                         letterSpacing: "1px",
-                        textAlign: "justify",
                       }}
+                      gutterBottom
+                      component="div"
+                      textAlign="justify"
                     ></Typography>
                   </Box>
                 </Grid>

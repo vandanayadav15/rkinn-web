@@ -90,5 +90,38 @@
         ]
       }
     ]
-  }
+  },
+
+  "amenitiesHotel": [
+    {
+      "id": 1,
+      "image": "/img/banner/coffee3.svg",
+      "title": "Coffee Shop"
+    },
+    {
+      "id": 2,
+      "image": "/img/banner/hotel.svg",
+      "title": "Accomodation"
+    },
+    {
+      "id": 3,
+      "image": "/img/banner/restaurent3.svg",
+      "title": "Restaurants"
+    },
+    {
+      "id": 4,
+      "image": "/img/banner/ticket2.svg",
+      "title": "Events & Tickets"
+    },
+    {
+      "id": 5,
+      "image": "/img/banner/parliament4.svg",
+      "title": "Government"
+    },
+    {
+      "id": 6,
+      "image": "/img/banner/parliament4.svg",
+      "title": "Government"
+    }
+  ]
 }
