@@ -37,11 +37,13 @@
       "summary": "Banner5"
     }
   ],
-  "service": {
-    "name": "About RK INN Services",
-    "content": "The best service apartments in Kurnool for your short and extended stays.You travel with a purpose and we assure an effortlessly comfortable, convenient and absolutely homelike stay every time you visit the City of Nizams.Embrace congenial pleasures and a home like environment with Rk Inn, Premium Serviced Apartments. The apartment offers an outdoor pool. A car rental service is available at Rk Inn Serviced Apartment.",
-    "image": "/img/banner/konda.png"
-  },
+  "service1": [
+    {
+      "name": "About RK INN Services",
+      "content": "The best service apartments in Kurnool for your short and extended stays.You travel with a purpose and we assure an effortlessly comfortable, convenient and absolutely homelike stay every time you visit the City of Nizams.Embrace congenial pleasures and a home like environment with Rk Inn, Premium Serviced Apartments. The apartment offers an outdoor pool. A car rental service is available at Rk Inn Serviced Apartment.",
+      "image": "/img/banner/konda.png"
+    }
+  ],
   "bannerIntro": {
     "title": "Look for the bestAccommodation and experiences!",
     "image": "/img/banner/9-xl.jpeg"
@@ -70,7 +72,7 @@
         ]
       },
       {
-        "place": "Gachibowli",
+        "place": "Kurnool",
         "hotels": [
           {
             "id": 1,

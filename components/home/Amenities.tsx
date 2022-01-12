@@ -39,12 +39,16 @@ const Amenities = (props: any) => {
   return (
     <>
       <Typography
-        variant="h5"
+        variant="h4"
         gutterBottom
         component="div"
-        sx={{ textAlign: "center", padding: "13px" }}
+        sx={{
+          textAlign: "center",
+          padding: "14px",
+          borderBottomWidth: 3,
+        }}
       >
-        RK INN Amenities
+        <b>RK INN Amenities</b>
       </Typography>
       <Grid container spacing={0.5}>
         {amenitiesHotel.map((item: any, index: any) => {

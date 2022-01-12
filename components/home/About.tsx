@@ -26,7 +26,12 @@ const About = (props: any) => {
         variant="h4"
         gutterBottom
         component="div"
-        sx={{ textAlign: "center" }}
+        sx={{
+          textAlign: "center",
+          paddingTop: "110px",
+          // textDecorationLine: "underline",
+          // textDecorationColor: "red",
+        }}
       >
         Where do you want to go?
       </Typography>
@@ -35,7 +40,7 @@ const About = (props: any) => {
         variant="body1"
         gutterBottom
         component="div"
-        sx={{ textAlign: "center" }}
+        sx={{ textAlign: "center", padding: "10px" }}
       >
         We recommend you the next destinations witha sweet discounted price
       </Typography>
@@ -55,7 +60,7 @@ const About = (props: any) => {
             >
               <Box
                 key={aboutHotel.id}
-                style={{ borderRadius: "16px", overflow: "hidden" }}
+                sx={{ borderRadius: "16px", overflow: "hidden" }}
               >
                 <Box
                   sx={{

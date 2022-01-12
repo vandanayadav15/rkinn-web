@@ -6,10 +6,10 @@ const Branch = (props: any) => {
   return (
     <>
       <Typography
-        variant="h5"
+        variant="h4"
         gutterBottom
         component="div"
-        sx={{ textAlign: "center" }}
+        sx={{ textAlign: "center", padding: "13px" }}
       >
         {props.data.name}
       </Typography>
@@ -19,7 +19,7 @@ const Branch = (props: any) => {
             variant="h6"
             gutterBottom
             component="div"
-            padding="12px"
+            padding="14px"
             sx={{ textAlign: "left" }}
           >
             Explore IN{" "}

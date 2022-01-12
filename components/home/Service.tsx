@@ -1,141 +1,72 @@
-import {
-  Container,
-  ImageListItem,
-  Grid,
-  Typography,
-  Paper,
-  Box,
-  CssBaseline,
-} from "@mui/material";
+import { Grid, Typography, Box } from "@mui/material";
 import React from "react";
 import Image from "next/image";
-import { makeStyles } from "@mui/styles";
 
-const useStyles = makeStyles({
-  serviceContainer: {
-    width: "100%",
-    display: "flex",
-    flexDirection: "column",
-    margin: "24px auto",
+const service1 = [
+  {
+    content:
+      "The best service apartments in Kurnool for your short and extended stays.You travel with a purpose and we assure an effortlessly comfortable, convenient and absolutely homelike stay every time you visit the City of Nizams.Embrace congenial pleasures and a home like environment with Rk Inn, Premium Serviced Apartments. The apartment offers an outdoor pool. A car rental service is available at Rk Inn Serviced Apartment.",
+    image: "/img/banner/konda.png",
   },
-  serviceHeading: {
-    textAlign: "center",
-  },
-  Content: {
-    display: "flex",
-    padding: "24px",
-  },
-  serviceContent: {
-    width: "50%",
-  },
-  serviceText: {
-    fontSize: "16px",
-    lineHeight: "1.9",
-    textAlign: "justify",
-    color: "rgb(99, 102, 111)",
-  },
-  serviceImageContainer: {
-    width: "50%",
-    display: "flex",
-    justifyContent: "flex-end",
-  },
-  serviceImage: {
-    width: "400px",
-    height: "300px",
-    margin: "0 auto",
-  },
-});
+];
 
-export const Service = (props: any) => {
-  console.log(props);
-  const classes = useStyles();
+const Service = (props: any) => {
   return (
     <>
-      {/* <br />
       <Typography
-        variant="h3"
+        variant="h4"
         gutterBottom
         component="div"
-        sx={{ textAlign: "center" }}
-        color={'primary'}
+        sx={{ textAlign: "center", padding: "30px" }}
       >
-       {data.name}
+        <b>About RK INN Services</b>
       </Typography>
-      <br />
-      <Grid container spacing={4}>
-        {data.map((item:any,index:any) => {
+
+      <Grid container>
+        {service1.map((item: any, index: any) => {
           return (
-            <Grid
-              key={index}
-              item
-              lg={4}
-              md={6}
-              sm={12}
-              xs={12}
-              sx={{ margin: "auto", textAlign: "center" }}
-              data-aos="fade-up"
-              data-aos-delay={150*index}
-            >
-              <ImageListItem key={item.id}>
-                <Image src={item.image} alt="" width="48" height="48"/>
-              </ImageListItem>
-              <Typography
-                variant="h6"
-                gutterBottom
-                color={'primary'}
-              >
-                {item.image}
-              </Typography>
-              <Typography
-                variant="subtitle2"
-                sx={{ textAlign: "left" }}
-                gutterBottom
-                component="div"
-                style={{
-                  padding: "0px 30px",
-                  letterSpacing: "1px",
-                  textAlign: "justify",
-                }}
-              >
-                {item.content}
-              </Typography>
-            </Grid>
+            <>
+              <Grid item xs={12} sm={12} md={6}>
+                <Typography
+                  variant="body1"
+                  component="p"
+                  gutterBottom
+                  sx={{
+                    fontSize: "16px",
+                    lineHeight: "1.9",
+                    textAlign: "justify",
+                    color: "rgb(99, 102, 111)",
+                    padding: "30px",
+                    justifyContent: "flex-end",
+                    display: "flex",
+                  }}
+                  data-aos="fade-right"
+                >
+                  {item.content}
+                </Typography>
+              </Grid>
+              <Grid item xs={12} sm={12} md={6}>
+                <Box
+                  sx={{
+                    width: "400px",
+                    height: "300px",
+                    margin: "0 auto",
+                  }}
+                >
+                  <Image
+                    src={item.image}
+                    alt=""
+                    height="100%"
+                    width="100%"
+                    layout="responsive"
+                    data-aos="fade-left"
+                  />
+                </Box>
+              </Grid>
+            </>
           );
         })}
-      </Grid> */}
-
-      <div className={classes.serviceContainer}>
-        <div className={classes.serviceHeading}>
-          <Typography variant="h4" gutterBottom component="div">
-            <b>{props.data.name}</b>
-          </Typography>
-        </div>
-        <div className={classes.Content}>
-          <div className={classes.serviceContent}>
-            <Typography
-              variant="body1"
-              component="p"
-              gutterBottom
-              className={classes.serviceText}
-              data-aos="fade-right"
-            >
-              {props.data.content}
-            </Typography>
-          </div>
-          <div className={classes.serviceImageContainer}>
-            <div className={classes.serviceImage}>
-              <Image
-                src={props.data.image}
-                alt=""
-                height="100%"
-                width="100%"
-                layout="responsive"
-                data-aos="fade-left"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+      </Grid>
     </>
   );
 };

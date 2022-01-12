@@ -5,7 +5,6 @@ import Footer from "../components/utils/Footer";
 import Banner from "../components/home/Banner";
 import Service from "../components/home/Service";
 import Container from "@mui/material/Container";
-import { BannerIntro } from "../components/home/BannerIntro";
 import About from "../components/home/About";
 import Branch from "../components/home/Branch";
 import Amenities from "../components/home/Amenities";
@@ -16,7 +15,6 @@ const Home: NextPage = ({ data }: any) => {
       <Container sx={{ marginTop: 2 }}>
         <Banner data={data.slides} />
         <Service data={data.service} />
-        <BannerIntro data={data.bannerIntro} />
         <About data={data.about} />
         <Branch data={data.branch_master} />
         <Amenities data={data.amenities} />
