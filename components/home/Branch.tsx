@@ -9,7 +9,14 @@ const Branch = (props: any) => {
         variant="h4"
         gutterBottom
         component="div"
-        sx={{ textAlign: "center", padding: "13px" }}
+        sx={{
+          textAlign: "center",
+          padding: "13px",
+          textDecorationLine: "underline",
+          textDecorationThickness: "5px",
+          textDecorationColor: "#f73f5b",
+          textUnderlinePosition: "under",
+        }}
       >
         {props.data.name}
       </Typography>

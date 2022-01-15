@@ -29,8 +29,11 @@ const About = (props: any) => {
         sx={{
           textAlign: "center",
           paddingTop: "110px",
-          // textDecorationLine: "underline",
-          // textDecorationColor: "red",
+          textDecorationLine: "underline",
+          textDecorationThickness: "5px",
+          textDecorationColor: "#f73f5b",
+          // backgroundImageLinearGradient: "89deg#f73f5b#263840",
+          textUnderlinePosition: "under",
         }}
       >
         Where do you want to go?

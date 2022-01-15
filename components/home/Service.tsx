@@ -17,7 +17,15 @@ const Service = (props: any) => {
         variant="h4"
         gutterBottom
         component="div"
-        sx={{ textAlign: "center", padding: "30px" }}
+        sx={{
+          textAlign: "center",
+          padding: "30px",
+          paddingTop: "100px",
+          textDecorationLine: "underline",
+          textDecorationThickness: "5px",
+          textDecorationColor: "#f73f5b",
+          textUnderlinePosition: "under",
+        }}
       >
         <b>About RK INN Services</b>
       </Typography>
@@ -36,7 +44,7 @@ const Service = (props: any) => {
                     lineHeight: "1.9",
                     textAlign: "justify",
                     color: "rgb(99, 102, 111)",
-                    padding: "30px",
+                    paddingTop: "30px",
                     justifyContent: "flex-end",
                     display: "flex",
                   }}

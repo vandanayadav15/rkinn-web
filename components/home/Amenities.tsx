@@ -46,6 +46,10 @@ const Amenities = (props: any) => {
           textAlign: "center",
           padding: "14px",
           borderBottomWidth: 3,
+          textDecorationLine: "underline",
+          textDecorationThickness: "5px",
+          textDecorationColor: "#f73f5b",
+          textUnderlinePosition: "under",
         }}
       >
         <b>RK INN Amenities</b>
