@@ -21,6 +21,7 @@ const Banner = ({ data }: any) => {
       textAlign: "center",
       color: "white",
       backgroundColor: "rgba(0,0,0,0.5)",
+      background: "rgba(0, 0, 0, 0.5)",
     },
     centered: {
       position: "absolute",
@@ -33,6 +34,7 @@ const Banner = ({ data }: any) => {
   const BannerText = ({ item }: any) => (
     <>
       <Typography
+        style={styles.centered}
         variant="h3"
         component="div"
         gutterBottom
@@ -40,15 +42,6 @@ const Banner = ({ data }: any) => {
         data-aos="fade-up"
       >
         {item.title}
-      </Typography>
-      <Typography
-        variant="body2"
-        component="div"
-        gutterBottom
-        align="center"
-        data-aos="fade-up"
-      >
-        {item.summary}
       </Typography>
     </>
   );
