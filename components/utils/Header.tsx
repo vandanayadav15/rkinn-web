@@ -41,16 +41,9 @@ const Header = () => {
             >
               <IconButton edge="start" aria-label="home">
                 <MuiNextLink activeClassName="active" href="/">
-                  <Image
-                    height="56"
-                    width="70"
-                    src="/logo.png"
-                    alt="logo"
-                  />
+                  <Image height="56" width="70" src="/logo.png" alt="logo" />
                 </MuiNextLink>
               </IconButton>
-
-
 
               <Stack
                 direction="column"
